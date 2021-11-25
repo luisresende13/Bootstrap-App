@@ -36,8 +36,8 @@
                     </ul>   
 
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"></span> Login</a>
+<!-- auto-association to modal <a data-toggle="modal" data-target="#loginModal">  --------->
+                        <a id='loginButton'><span class="fa fa-sign-in"></span> Login</a>
                     </span>
 
                 </div>         
@@ -182,12 +182,20 @@
                 <div class='col-12 col-sm-3'>
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+
+                <div class='col-12 col-sm-3'>
+
+                    <a id='reserveButton' role="button" class="btn btn-block nav-link btn-warning">Reserve Table</a>
+
+<!-- ---------- Reserve Table Button with built-in association with the reserve modal --------
+
                 <div class='col-12 col-sm-3'>
 
                     <a role="button" class="btn btn-block nav-link btn-warning"
                     data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
 
-<!-- Reserver Table Button Linking to form in the end of the document ----------
+--------------------------------------  -->
+<!-- Reserve Table Button Linking to form in the end of the document ----------
 
                     <a role="button" class="btn btn-block nav-link btn-warning"
                         data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
@@ -508,6 +516,11 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+    </script>
+
+    <script type="text/javascript">    
+        $('#reserveButton').click( function() { $('#reserveModal').modal('toggle') } );
+        $('#loginButton').click( function() { $('#loginModal').modal('toggle') } );
     </script>
 
 </body>
