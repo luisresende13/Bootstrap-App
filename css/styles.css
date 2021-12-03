@@ -1,5 +1,6 @@
 .pad20 { 
   padding:20px 0px; }
+  
 .bread {
   padding: 30px; }
 
@@ -43,7 +44,10 @@ body {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  padding: 10px; }
+  padding: 10px; 
+}
+
+
 
 .carousel {
   background: #512DA8; }
