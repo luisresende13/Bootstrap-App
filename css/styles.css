@@ -1,3 +1,5 @@
+.pad20 { 
+  padding:20px 0px; }
 .bread {
   padding: 30px; }
 
@@ -10,6 +12,7 @@
   padding: 50px 0px;
   border-bottom: 1px ridge;
   min-height: 50px; }
+
 .row-content p {
   text-align: justify; }
 
